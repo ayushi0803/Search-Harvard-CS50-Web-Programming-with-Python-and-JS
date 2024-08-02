@@ -1,0 +1,119 @@
+/* Base font and color for the entire body */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #0000FF; /* Changed text color to blue */
+}
+
+/* Styling for header level 1 */
+h1 {
+  font-size: 46pt; /* Set font size to 46 points (original comment was incorrect) */
+  margin: 5px; /* Apply 5px margin on all sides */
+  color: #008000; /* Added green color for h1 headers */
+}
+
+/* Styling for header level 3 */
+h3 {
+  margin: 30px 0px 10px 47px; /* Apply specific margin values (top, right, bottom, left) */
+  font-style: italic; /* Added italic style for h3 headers */
+}
+
+/* Navigation bar styles */
+.navbar {
+  text-align: right; /* Align navbar text to the right */
+  background-color: #f0f0f0; /* Added light grey background color */
+}
+.navbar li {
+  display: inline-block; /* Display list items in a line */
+  padding: 10px; /* Apply 10px padding */
+  margin-right: 5px; /* Added right margin for spacing */
+}
+.navbar a {
+  color: #0000FF; /* Changed link color to blue */
+}
+
+/* Combined selectors for various link states */
+.navbar a, .navbar a:active, .navbar a:hover, .navbar a:visited {
+  text-decoration: none; /* Remove underline from links */
+  color: #FF4500; /* Added orange color for active, hover, and visited states */
+}
+.navbar a:active, .navbar a:hover {
+  text-decoration: underline; /* Underline links on hover and active state */
+}
+
+/* Search bar styles */
+.searchbar {
+  border-color: #888888; /* Set border color */
+  border-style: solid; /* Solid border style */
+  border-width: 1px; /* 1px border width */
+  border-radius: 20px; /* Rounded corners */
+  display: block; /* Display as block element */
+  margin: 10px; /* Apply 10px margin */
+  padding: 10px; /* Apply 10px padding */
+  width: 500px; /* Fixed width */
+  background-color: #f9f9f9; /* Added light grey background color */
+}
+
+/* Responsive styling for search bar on small screens */
+@media only screen and (max-width: 550px) {
+  .searchbar {
+    width: 90%; /* Adjust width to 90% on small screens */
+  }
+}
+
+/* Small search bar styles */
+.searchbar-sm {
+  border-radius: 5px; /* Smaller border radius */
+  display: block; /* Display as block element */
+  margin: 7px; /* Apply 7px margin */
+  padding: 7px; /* Apply 7px padding */
+  width: 500px; /* Fixed width */
+  background-color: #f1f1f1; /* Added light grey background color */
+}
+
+/* Responsive styling for small search bar on medium screens */
+@media only screen and (max-width: 768px) {
+  .searchbar-sm {
+    width: 190px; /* Adjust width to 190px on medium screens */
+  }
+}
+
+/* Search button styles */
+.searchbutton {
+  background-color: #F8F9FA; /* Light grey background */
+  border-style: none; /* No border */
+  margin: 11px 4px; /* Apply specific margin values */
+  padding: 8px 16px; /* Apply specific padding values */
+  cursor: pointer; /* Added pointer cursor on hover */
+}
+
+/* Table for text input styles */
+.text-input-table {
+  margin: 15px 45px; /* Apply specific margin values */
+}
+.text-input-table tr {
+  font-size: 10pt; /* Set font size for table rows */
+}
+.text-input-table tr td .searchbutton {
+  float: right; /* Float button to the right */
+  background-color: #4D90FE; /* Set background color to blue */
+  color: #FFFFFF; /* Set text color to white */
+}
+
+/* Vertical centering */
+.vertical-center {
+  margin-top: 150px; /* Apply top margin */
+}
+
+/* Responsive styling for vertical centering on short screens */
+@media only screen and (max-height: 500px) {
+  .vertical-center {
+    margin-top: 15px; /* Adjust top margin */
+  }
+}
+
+/* Hover and focus states for search elements */
+.searchbar:hover, .searchbar:focus, .searchbar-sm:hover, .searchbar-sm:focus, .searchbutton:hover {
+  box-shadow: 0 0 1px 1px #888888; /* Add subtle shadow */
+  outline: none; /* Remove outline */
+  background-color: #e0e0e0; /* Added slight background color change on hover/focus */
+}

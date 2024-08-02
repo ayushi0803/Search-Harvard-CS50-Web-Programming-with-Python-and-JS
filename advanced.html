@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Define the document type as HTML5 -->
+<html lang="en">
+	<head>
+		<!-- Metadata about the document -->
+		<title>Advanced Search</title> <!-- Title of the webpage displayed in the browser tab -->
+		<link rel="stylesheet" href="style.css"> <!-- Link to the external CSS stylesheet -->
+	</head>
+	<body>
+		<!-- Main content of the webpage -->
+		<ul class="navbar">
+			<!-- Navigation bar with list items -->
+			<li style="float:left">Ayushi's Google</li> <!-- Left-aligned item with the site's name -->
+			<li><a href="index.html">Back to Search</a></li> <!-- Link to go back to the main search page -->
+		</ul>
+		<h3>Advanced Search</h3> <!-- Header for the advanced search section -->
+		<hr> <!-- Horizontal rule to separate sections -->
+		
+		<form action="https://google.com/search">
+			<!-- Search form that submits to Google's search engine -->
+			<table class="text-input-table">
+				<!-- Table to organize the input fields -->
+				<tr><td><h4>Find pages with...</h4></td></tr> <!-- Header row for the table -->
+				<tr>
+					<td> All of these words: </td> <!-- Label for the input field -->
+					<td> <input name="as_q" type="text" class="searchbar-sm"> </td> <!-- Input field for "All of these words" with searchbar-sm class -->
+				</tr>
+				<tr>
+					<td>This exact word or phrase: </td> <!-- Label for the input field -->
+					<td><input name="as_epq" type="text" class="searchbar-sm"></td> <!-- Input field for "This exact word or phrase" with searchbar-sm class -->
+				</tr>
+				<tr>
+					<td> Any of these words: </td> <!-- Label for the input field -->
+					<td> <input name="as_oq" type="text" class="searchbar-sm"> </td> <!-- Input field for "Any of these words" with searchbar-sm class -->
+				</tr>
+				<tr>
+					<td>None of these words: </td> <!-- Label for the input field -->
+					<td><input name="as_eq" type="text" class="searchbar-sm"> </td> <!-- Input field for "None of these words" with searchbar-sm class -->
+				</tr>
+				<tr>
+					<td></td> <!-- Empty cell for alignment -->
+					<td><input type="submit" value="Advanced Search" class="searchbutton"></td> <!-- Submit button for advanced search with searchbutton class -->
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
